@@ -5,11 +5,45 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>PWSA KTM</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
     </head>
+   
     <body>
-        <div>TODO write content</div>
-    </body>
+    <center>
+    
+         <form action="/getKtm" method="post" enctype="multipart/form-data">
+              <fieldset>
+            <legend align="center">Form KTM:</legend>
+            <br>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="nama">
+            <br><br/>
+                
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" name="nim">
+            <br><br/>
+            
+             <label for="major">Jurusan:</label>
+            <input type="text" id="major" name="jurusan">
+            <br><br/>
+            
+             <label for="faku">Fakultas:</label>
+            <input type="text" id="faku" name="fakultas">
+            <br><br/>
+            
+             <label for="tgl">Tanggal Lahir:</label>
+            <input type="date" id="tgl" name="tanggal">
+            <br><br/>
+            
+            <label for="pic">Gambar:</label>
+            <input type="file" id="pic" name="gambar" accept="image/*"/>
+            <br><br/>  
+            
+                <input style="color: maroon" type="submit" value="Submit">
+        </fieldset>
+    </form>
+   </body>
 </html>
